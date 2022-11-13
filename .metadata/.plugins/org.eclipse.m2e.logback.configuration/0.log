@@ -4728,3 +4728,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.gu
 2022-11-12 12:05:15,864 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Real Time Automation Projects\SeleniumFrameworkDesign\src\main\resources
 2022-11-12 12:05:15,865 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-11-12 12:05:15,865 [Worker-94: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Real Time Automation Projects\SeleniumFrameworkDesign\src\test\resources
+2022-11-13 14:29:25,259 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
