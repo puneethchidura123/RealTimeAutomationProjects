@@ -1,0 +1,9 @@
+package PuneethChidura.resources;
+
+public class ExtentReporterNG {
+
+	public void getReportObject()
+	{
+		
+	}
+}

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="1" failed="3" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-12T06:36:54Z" name="Suite" finished-at="2022-11-12T06:37:47Z" duration-ms="53486">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" name="submitOrder" class="PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" name="loginErrorValidation" class="PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.productErrorValidation()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" name="productErrorValidation" class="PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2022-11-12T06:36:54Z" name="SubmitOrderTest" finished-at="2022-11-12T06:37:27Z" duration-ms="33186">
+      <class name="PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:36:54Z" name="launchApplication" finished-at="2022-11-12T06:37:01Z" duration-ms="7104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:37:01Z" name="submitOrder" data-provider="getData" finished-at="2022-11-12T06:37:04Z" duration-ms="2803" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=iloveududE@1, product=ZARA COAT 3, email=puneethchidura123@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-xbs-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1280, 27). Other element would receive the click: <div _ngcontent-xbs-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=107.0.5304.106)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a0b0d7c679c56c3080616565025e976, clickElement {id=8df298e6-cc66-4ac9-9cde-af63caae3712}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: D:\Users\pchidura\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57284/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1a0b0d7c679c56c3080616565025e976)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: 1a0b0d7c679c56c3080616565025e976]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-xbs-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1280, 27). Other element would receive the click: <div _ngcontent-xbs-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=107.0.5304.106)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a0b0d7c679c56c3080616565025e976, clickElement {id=8df298e6-cc66-4ac9-9cde-af63caae3712}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: D:\Users\pchidura\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57284/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1a0b0d7c679c56c3080616565025e976)] -> xpath: //button[@routerlink='/dashboard/cart']]
+Session ID: 1a0b0d7c679c56c3080616565025e976
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy19.click(Unknown Source)
+at PuneethChidura.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.openCart(AbstractComponent.java:72)
+at PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:37:05Z" name="closeApplication" finished-at="2022-11-12T06:37:05Z" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:37:05Z" name="launchApplication" finished-at="2022-11-12T06:37:08Z" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:37:08Z" name="submitOrder" data-provider="getData" finished-at="2022-11-12T06:37:11Z" duration-ms="2787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=testuseR@1, product=ADIDAS ORIGINAL, email=puneethjb@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:37:11Z" name="closeApplication" finished-at="2022-11-12T06:37:27Z" duration-ms="16255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea]" started-at="2022-11-12T06:37:27Z" name="orderHistoryTest" finished-at="2022-11-12T06:37:27Z" depends-on-methods="PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SubmitOrderTest.orderHistoryTest()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SubmitOrderTest.orderHistoryTest()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@344f4dea] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+      </class> <!-- PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest -->
+    </test> <!-- SubmitOrderTest -->
+    <test started-at="2022-11-12T06:36:54Z" name="ErrorValidationTest" finished-at="2022-11-12T06:37:47Z" duration-ms="53486">
+      <class name="PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:36:54Z" name="launchApplication" finished-at="2022-11-12T06:37:00Z" duration-ms="6177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:00Z" name="loginErrorValidation" finished-at="2022-11-12T06:37:22Z" duration-ms="22145" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@aria-label='Incorrect email or password.']' (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@aria-label='Incorrect email or password.']' (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at PuneethChidura.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:50)
+at PuneethChidura.SeleniumFrameworkDesign.PageObjects.LandingPage.getLoginErrorMessage(LandingPage.java:45)
+at PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='Incorrect email or password.']"}
+  (Session info: chrome=107.0.5304.106)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82aa235b867639ae76375659375ecc65, findElement {using=xpath, value=//div[@aria-label='Incorrect email or password.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: D:\Users\pchidura\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57285/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82aa235b867639ae76375659375ecc65
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy19.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:22Z" name="closeApplication" finished-at="2022-11-12T06:37:38Z" duration-ms="16258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:38Z" name="launchApplication" finished-at="2022-11-12T06:37:41Z" duration-ms="2566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:41Z" name="loginErrorValidation" finished-at="2022-11-12T06:37:42Z" duration-ms="941" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email and password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email and password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:42Z" name="closeApplication" finished-at="2022-11-12T06:37:42Z" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:42Z" name="launchApplication" finished-at="2022-11-12T06:37:45Z" duration-ms="2440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:45Z" name="productErrorValidation" finished-at="2022-11-12T06:37:47Z" duration-ms="1988" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1] but found [2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1] but found [2]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:547)
+at org.testng.Assert.assertEquals(Assert.java:557)
+at PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest.productErrorValidation(ErrorValidationTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest@71c27ee8]" started-at="2022-11-12T06:37:47Z" name="closeApplication" finished-at="2022-11-12T06:37:47Z" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest -->
+    </test> <!-- ErrorValidationTest -->
+  </suite> <!-- Suite -->
+</testng-results>

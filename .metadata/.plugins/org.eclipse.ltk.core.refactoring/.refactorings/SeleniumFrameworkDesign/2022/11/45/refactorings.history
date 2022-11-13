@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;errorvalidations.xml&apos; to &apos;SeleniumFrameworkDesign/src/main/java/TestSuites&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumFrameworkDesign&apos;&#x0D;&#x0A;- Destination element: &apos;SeleniumFrameworkDesign/src/main/java/TestSuites&apos;&#x0D;&#x0A;- Original element: &apos;errorvalidations.xml&apos;" description="Copy file" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;TestSuites" element1="src/main/java/TestSuites/errorvalidations.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1667617744685" units="0" version="1.0"/>
+</session>

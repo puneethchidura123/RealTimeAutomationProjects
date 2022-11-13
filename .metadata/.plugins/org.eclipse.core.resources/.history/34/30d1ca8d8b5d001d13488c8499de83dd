@@ -1,0 +1,13 @@
+package PuneethChidura.data;
+
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+
+public class DataReader {
+
+	public void getJsonDataToMap() throws IOException
+	{
+		FileUtils.readFileToString(System.getProperty("user.dir")+"\\src\\test\\java\\PuneethChidura\\data\\PurchaseOrder.json");
+	}
+}

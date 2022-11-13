@@ -1,0 +1,18 @@
+package PuneethChidura.ExtentReports;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class ExtentReportsDemo {
+
+@Test
+public void initialDemo()
+{
+	System.setProperty("webdriver.chrome.driver", "D:\\Real Time Automation Projects\\ExtentReports\\BrowserDrivers\\chromedriver.exe");
+	ChromeDriver driver = new ChromeDriver();
+	driver.get("https://rahulshettyacademy.com/");
+	 String title =   driver.getTitle();
+	 System.out.println(title);
+}
+
+}
