@@ -32,13 +32,11 @@ public class PaymentPage extends AbstractComponent {
 		List<WebElement> CountryOptions = driver.findElements(By.xpath("//button[@class='ta-item list-group-item ng-star-inserted']/span")); 
 		WebElement RequiredCountryOption = 
 		CountryOptions.stream().filter(country -> country.getText().trim().equals(CountryName)).findFirst().orElse(null);
-		
 		if(RequiredCountryOption!=null)
 		{
 			RequiredCountryOption.click();
 		}
-		
-		PlaceOrderButton.click();
+		clickOnWebElement(PlaceOrderButton);
 		return new OrderCofirmationPage(driver);
 	}
 }

@@ -16,7 +16,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -38,13 +40,19 @@ public class BaseTest {
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\java\\PuneethChidura\\resources\\GlobalData.properties"));
 		prop.load(fis);
-		String BrowserName = prop.getProperty("browser");
-		
-		if(BrowserName.equalsIgnoreCase("chrome"))
+		String BrowserName = 
+		System.getProperty("browser") != null ?System.getProperty("browser"):prop.getProperty("browser");
+		if(BrowserName.contains("chrome"))
 		{
 			//WebDriverManager.chromedriver().driverVersion("107.0.5304.63").setup();
 			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver", "D:\\Real Time Automation Projects\\SeleniumFrameworkDesign\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
+			if(BrowserName.contains("headless"))
+			{
+				ChromeOptions chromeoptions = new ChromeOptions();
+				chromeoptions.addArguments("headless");
+				driver = new ChromeDriver(chromeoptions);
+			}
 			driver = new ChromeDriver();
 		}
 		else if (BrowserName.equalsIgnoreCase("firefox")) {

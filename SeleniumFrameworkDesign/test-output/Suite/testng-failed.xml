@@ -10,7 +10,7 @@
         <methods>
           <include name="launchApplication"/>
           <include name="orderHistoryTest"/>
-          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
           <include name="closeApplication"/>
         </methods>
       </class> <!-- PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest -->

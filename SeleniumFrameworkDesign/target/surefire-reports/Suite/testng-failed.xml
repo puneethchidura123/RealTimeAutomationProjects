@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="PuneethChidura.SeleniumFrameworkDesign.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="ErrorValidationTest(failed)" parallel="tests">
+    <classes>
+      <class name="PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="productErrorValidation"/>
+          <include name="loginErrorValidation"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- ErrorValidationTest(failed) -->
+  <test thread-count="5" verbose="0" name="SubmitOrderTest(failed)" parallel="tests">
+    <classes>
+      <class name="PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="orderHistoryTest"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- SubmitOrderTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

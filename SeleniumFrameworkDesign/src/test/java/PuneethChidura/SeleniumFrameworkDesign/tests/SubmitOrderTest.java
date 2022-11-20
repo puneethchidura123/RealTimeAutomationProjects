@@ -40,6 +40,7 @@ public class SubmitOrderTest extends BaseTest{
 	@Test(dataProvider = "getData",groups = {"Purchase"})
 public void submitOrder(HashMap<Object, Object> input) throws Throwable
 {
+		System.out.println("submitOrder method eecution started");
 		System.out.println("current email :: "+input.get("email"));
 	ProductCatalogue productcatalogue = landingpage.login((String)input.get("email"), (String)input.get("password"));
 	System.out.println("current product name :: "+input.get("product"));
@@ -53,20 +54,21 @@ public void submitOrder(HashMap<Object, Object> input) throws Throwable
 	String RequiredConfirmationMessage = "THANKYOU FOR THE ORDER.";
 	String ConfirmationMessage = orderconfirmationpage.getConfirmationPageHeader();
 	Assert.assertTrue(ConfirmationMessage.equalsIgnoreCase(RequiredConfirmationMessage));
+	System.out.println("submitOrder method eecution completed");
 }
 	
 	// to verify if zara coat 3 is displayed in orders page
 	@Test(dependsOnMethods = {"submitOrder"})
-	public void orderHistoryTest()
+	public void orderHistoryTest() throws Exception
 	{
+		System.out.println("orderHistoryTest method eecution started");
 		ProductCatalogue productcatalogue = landingpage.login("puneethchidura123@gmail.com", "iloveududE@1");
+		//Thread.sleep(10000);
 		OrdersPage orderspage = productcatalogue.openOrders();
+		//Thread.sleep(10000);
 		orderspage.verifyIfOrderDisplayed(productname);
+		System.out.println("orderHistoryTest method eecution completed");
 	}
-	
-	
-	
-	
 	
 	@DataProvider
 	public Object[] getData() throws IOException

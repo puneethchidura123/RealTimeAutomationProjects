@@ -29,6 +29,19 @@ public class AbstractComponent {
 	@FindBy(xpath = "//button[@routerlink='/dashboard/myorders']")
 	WebElement OrdersButton;
 	
+	public void clickOnWebElement(WebElement webelement)
+	{
+		try
+		{
+			webelement.click();
+		}
+		catch(ElementClickInterceptedException e)
+		{
+			waitForElementToAppear(webelement);
+			webelement.click();
+		}
+	}
+	
 	public void waitForElementToAppear(By Locator,long timeinseconds)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeinseconds));
@@ -46,7 +59,7 @@ public class AbstractComponent {
 	public void waitForElementToAppear(WebElement webelement)
 	{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		Duration d  =  Duration.ofSeconds(5);
+		Duration d  =  Duration.ofSeconds(15);
 		wait.until(ExpectedConditions.visibilityOf(webelement)); 
 	}
 	
@@ -59,19 +72,7 @@ public class AbstractComponent {
 	
 	public MyCartPage openCart()
 	{
-		try
-		{
-			CartButton.click();
-		}
-		catch(ElementClickInterceptedException e)
-		{
-			System.out.println("inside catch");
-			//driver.navigate().refresh();
-			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@routerlink='/dashboard/cart']")));
-			waitForElementToAppear(CartButton);
-			CartButton.click();
-		}
-		
+		clickOnWebElement(CartButton);
 		return new MyCartPage(driver);
 	}
 	
