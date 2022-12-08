@@ -70,12 +70,12 @@ public class BaseTest {
 	}
 	
 	@BeforeMethod(alwaysRun = true)
-	public void launchApplication() throws Exception
+	public LandingPage launchApplication() throws Exception
 	{
 		WebDriver driver = initializeDriver();
 		landingpage = new LandingPage(driver);
 		landingpage.goTo();
-		//return landingpage;
+		return landingpage;
 	}
 
 	@AfterMethod(alwaysRun = true)

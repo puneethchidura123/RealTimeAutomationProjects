@@ -1,0 +1,8 @@
+package PuneethChidura.SeleniumFrameworkDesign.cucumber;
+
+import io.cucumber.*;
+
+@CucumberOptions()
+public class TestNGTestRunner {
+
+}

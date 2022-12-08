@@ -1,0 +1,11 @@
+package PuneethChidura.SeleniumFrameworkDesign.cucumber;
+
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+		features = "src/test/java/PuneethChidura/SeleniumFrameworkDesign/cucumber",
+		glue = ""
+		)
+public class TestNGTestRunner {
+
+}

@@ -1,0 +1,23 @@
+long num;
+long output
+
+785
+long reminder = 0;
+while(num/10 != 0)
+{
+reminder =  num%10;
+num = num/10;
+
+output = reminder + reminder*10; 
+}
+output reminder + reminder*10;
+return output; 
+
+
+reminder = 5
+num = 78
+output = 50
+
+reminder = 8
+num = 7
+output = 85 

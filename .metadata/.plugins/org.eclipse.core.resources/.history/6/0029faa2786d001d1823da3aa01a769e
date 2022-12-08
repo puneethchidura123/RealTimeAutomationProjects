@@ -1,0 +1,14 @@
+@tag
+Feature: error validation
+  I want to use this template for my feature file
+
+  @tag2
+  Scenario Outline: Title of your scenario outline
+    Given i landed on ecommerce home page
+    When i loggedin with <username>  and <password>
+    Then "Incorrect email or password." 
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |

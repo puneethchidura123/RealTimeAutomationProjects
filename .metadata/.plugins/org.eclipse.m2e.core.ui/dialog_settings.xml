@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Automation-Test-Store"/>
 			<item value="D:\Real Time Automation Projects\SeleniumFrameworkDesign"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,15 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="PuneethChidura.ExtentReports"/>
-			<item value="PuneethChidura.SeleniumFrameworkDesign"/>
 		</list>
 		<list key="groupId">
-			<item value="PuneethChidura"/>
 		</list>
 		<list key="artifactId">
-			<item value="ExtentReports"/>
-			<item value="SeleniumFrameworkDesign"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

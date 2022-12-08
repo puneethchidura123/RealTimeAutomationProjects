@@ -1,0 +1,24 @@
+package PuneethChidura.SeleniumFrameworkDesign.stepdefinations;
+
+import PuneethChidura.SeleniumFrameworkDesign.PageObjects.LandingPage;
+import PuneethChidura.SeleniumFrameworkDesign.PageObjects.ProductCatalogue;
+import PuneethChidura.SeleniumFrameworkDesign.TestComponents.BaseTest;
+import io.cucumber.java.en.Given;
+
+public class StepDefinations extends BaseTest{
+
+	LandingPage landingpage ;
+	ProductCatalogue productcatalogue;
+	@Given("i landed on ecommerce home page")
+	public void i_landed_on_ecommerce_home_page() throws Exception
+	{
+		landingpage =  launchApplication();
+	}
+	
+	@Given("^i loggedin with username (.+)  and password (.+)$")
+	public void i_loggedin_with_username_and_password(String username,String password)
+	{
+		productcatalogue =  landingpage.login(username, password);
+	}
+	
+}

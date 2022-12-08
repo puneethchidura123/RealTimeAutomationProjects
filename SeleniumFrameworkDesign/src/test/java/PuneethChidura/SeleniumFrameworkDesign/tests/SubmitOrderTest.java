@@ -49,7 +49,7 @@ public void submitOrder(HashMap<Object, Object> input) throws Throwable
 	//checking if only one matching product is available
 	Assert.assertEquals(1, mycartpage.getNoOfProductsInCart(productname));
 	PaymentPage paymentpage = mycartpage.checkOutCart();
-	String CountryName = "India";
+	String CountryName = "	";
 	OrderCofirmationPage orderconfirmationpage = paymentpage.enterCountryNameAndPlaceOrder(CountryName);
 	String RequiredConfirmationMessage = "THANKYOU FOR THE ORDER.";
 	String ConfirmationMessage = orderconfirmationpage.getConfirmationPageHeader();

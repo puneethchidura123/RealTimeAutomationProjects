@@ -8,96 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">SubmitOrderTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num">55,505</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ErrorValidationTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">2</td><td class="num">59,859</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num attn">2</th><th class="num attn">4</th><th class="num">115,364</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,218</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SubmitOrderTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest</td><td><a href="#m0">submitOrder</a></td><td rowspan="2">1668502261070</td><td rowspan="2">2918</td></tr><tr class="failedeven"><td><a href="#m1">submitOrder</a></td></tr><tr><th colspan="4">SubmitOrderTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest</td><td><a href="#m2">orderHistoryTest</a></td><td rowspan="1">1668502274147</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ErrorValidationTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest</td><td><a href="#m3">loginErrorValidation</a></td><td rowspan="1">1668502250799</td><td rowspan="1">1263</td></tr><tr class="failedeven"><td><a href="#m4">productErrorValidation</a></td><td rowspan="1">1668502275462</td><td rowspan="1">2344</td></tr><tr><th colspan="4">ErrorValidationTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest</td><td><a href="#m5">loginErrorValidation</a></td><td rowspan="1">1668502230988</td><td rowspan="1">1178</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">PuneethChidura.SeleniumFrameworkDesign.cucumber.TestNGTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1669462080348</td><td rowspan="1">5467</td></tr></tbody>
 </table>
-<h2>SubmitOrderTest</h2><h3 id="m0">PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=testuseR@1, product=ADIDAS ORIGINAL, email=puneethjb@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-jco-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1110, 27). Other element would receive the click: &lt;div _ngcontent-jco-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=107.0.5304.107)
-Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16d26800461b14ec46978bb072886664, clickElement {id=2aa3fc9d-f2c9-44b2-a3c6-6208a2e3b19c}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PUNEET~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52305}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52305/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (16d26800461b14ec46978bb072886664)] -&gt; xpath: //button[@routerlink=&apos;/dashboard/cart&apos;]]
-Session ID: 16d26800461b14ec46978bb072886664
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at PuneethChidura.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.clickOnWebElement(AbstractComponent.java:41)
-	at PuneethChidura.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.openCart(AbstractComponent.java:75)
-	at PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:48)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=iloveududE@1, product=ZARA COAT 3, email=puneethchidura123@gmail.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1078, 653)
-  (Session info: chrome=107.0.5304.107)
-Build info: version: &apos;4.5.0&apos;, revision: &apos;fe167b119a&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dae07856ab30235d9a685129d2419a42, clickElement {id=49630dc8-fe0f-4b04-b068-20484da63ed8}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\PUNEET~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52201}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52201/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (dae07856ab30235d9a685129d2419a42)] -&gt; xpath: //a[contains(text(),&apos;Place Order&apos;)]]
-Session ID: dae07856ab30235d9a685129d2419a42
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy19.click(Unknown Source)
-	at PuneethChidura.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.clickOnWebElement(AbstractComponent.java:41)
-	at PuneethChidura.SeleniumFrameworkDesign.PageObjects.PaymentPage.enterCountryNameAndPlaceOrder(PaymentPage.java:39)
-	at PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:53)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest#orderHistoryTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method SubmitOrderTest.orderHistoryTest()[pri:0, instance:PuneethChidura.SeleniumFrameworkDesign.tests.SubmitOrderTest@6821ea29] depends on not successfully finished methods
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ErrorValidationTest</h2><h3 id="m3">PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest#loginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email and password.] but found [Incorrect email or password.]
-	at PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:26)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest#productErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [1] but found [2]
-	at PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest.productErrorValidation(ErrorValidationTest.java:37)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest#loginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email and password.] but found [Incorrect email or password.]
-	at PuneethChidura.SeleniumFrameworkDesign.tests.ErrorValidationTest.loginErrorValidation(ErrorValidationTest.java:26)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">PuneethChidura.SeleniumFrameworkDesign.cucumber.TestNGTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Title of your scenario outline&quot;</td><td>&quot;error validation&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

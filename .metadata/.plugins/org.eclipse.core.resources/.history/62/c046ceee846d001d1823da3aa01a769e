@@ -1,0 +1,10 @@
+long num;
+long output
+
+while()
+{
+
+long reminder = 0
+reminder =  num%10;
+num = num/10;
+output = reminder + reminder*10; 

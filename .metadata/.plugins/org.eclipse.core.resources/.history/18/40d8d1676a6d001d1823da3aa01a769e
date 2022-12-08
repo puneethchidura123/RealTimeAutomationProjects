@@ -1,0 +1,13 @@
+package PuneethChidura.SeleniumFrameworkDesign.cucumber;
+
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+		features = "src/test/java/PuneethChidura/SeleniumFrameworkDesign/cucumber",
+		glue = "src/test/java/PuneethChidura/SeleniumFrameworkDesign/stepdefinations",
+		monochrome = true,
+		plugin = {"html:taget/cucumber-html"}
+		)
+public class TestNGTestRunner {
+
+}
